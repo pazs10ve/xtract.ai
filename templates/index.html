@@ -1,0 +1,25 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Image Captioning Service</title>
+                <style>
+                    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+                    h1 { color: #333; }
+                    .upload-form { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+                    .submit-btn { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+                    .submit-btn:hover { background-color: #45a049; }
+                </style>
+            </head>
+            <body>
+                <h1>Image Captioning Service</h1>
+                <div class="upload-form">
+                    <h2>Upload an image</h2>
+                    <form action="/predict" method="post" enctype="multipart/form-data">
+                        <input type="file" name="file" accept=".png,.jpg,.jpeg" required>
+                        <button type="submit" class="submit-btn">Generate Caption</button>
+                    </form>
+                </div>
+            </body>
+            </html>
+            
